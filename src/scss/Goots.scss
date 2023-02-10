@@ -1,79 +1,84 @@
-.goots{
-    padding: 0;
-    margin: 0;
-    &__h1{
-        padding: 40px 260px;
-        font-weight: 700;
-        font-family: 'Cormorant', serif;
-        font-style: normal;
-        font-size: 18px;
-        line-height: 16px;
-        letter-spacing: 0.05em;
+.goots {
+  padding-top: 60px;
+  padding-left: 105px;
+  margin: 0;
+  &__h1 {
+    position: relative;
+    margin-bottom: 56px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 12px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -500%;
+      bottom: -25px;
+      width: 1500%;
+      background-color: #e5e5e5;
+      height: 1px;
+    }
+  }
+  &__blok {
+    display: flex;
+  }
+  &__img {
+    width: 260px;
+    height: 373px;
+  }
+  &__tuxedo {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    height: 35px;
+    width: 223px;
+  }
+  &__heart {
+    text-align: right;
+    transform: translateY(-30px);
+  }
+  &__price {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  &__text {
+    text-align: right;
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: 600;
+    color: #afafaf;
+    transform: translateY(-20px);
+  }
+  &__line {
+    height: 2px;
+    background: #080808;
+  }
+  &__twoblock {
+    // PP
+    &-parralelogram {
+      width: 1140px;
+      height: 900px;
+      transform: skew(-45deg);
+      position: relative;
+      background: #252831;
+      display: block;
+      text-align: center;
+      line-height: 500px;
 
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+      }
     }
-    &__blok{
-        padding: 30px 260px;
-        display: flex;
-        column-gap: 20px;
-        
+    &-up {
+      display: flex;
     }
-    &__img{
-        width: 260px; 
-        height: 373px;
-    }
-    &__tuxedo{
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 20px;
-        height: 35px;
-        width: 223px;
-    }
-    &__heart{
-        text-align: right;
-        transform: translateY(-30px);
-    }
-    &__price{
-        font-weight: 600;
-        font-size: 16px; 
-        line-height: 21px;
-    }
-    &__text{
-        text-align: right;
-        font-size: 12px;
-        line-height: 21px;
-        font-weight: 600;
-        color: #AFAFAF;
-        transform: translateY(-20px);
-    }
-    &__line{
-        height: 2px;
-        width: 1450px;  
-        background: #080808;
-
-    }
-    &__twoblock{
-        // PP
-        &-parralelogram{
-            width: 1140px;
-            height: 900px;
-            transform: skew(-45deg);
-            position: relative;
-            background: #252831;
-            display: block;
-            text-align: center;
-            line-height: 500px;
-
-            &:before{
-                content: '';
-                position: absolute;
-                z-index: -1;
-               
-            }
-        }
-        &-up{
-            display: flex;
-        }
-    }
+  }
 }
-
-
+.elean__1 {
+  padding: 0 16px;
+}
