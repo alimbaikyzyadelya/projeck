@@ -192,7 +192,7 @@ const Goots = () => {
                   </div>
                 </div>
                 <div
-                  style={{ display: `${active2 ? "block" : "none"}` }}
+                  style={{display:`${active2 ? 'block' : 'none'}`}}
                   className="cardList__rigth-parametrs_item-block"
                 >
                   <div className="cardList__rigth-parametrs_item-block-flex">

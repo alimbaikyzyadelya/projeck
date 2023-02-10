@@ -194,7 +194,7 @@
 }
 
 .cardList {
-  padding: 50px 0 89px;
+  padding: 50px 0 30px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -505,7 +505,7 @@
         &-block {
           display: none;
           padding: 0 12px 15px;
-          &-flex {
+            &-flex {
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
