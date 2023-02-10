@@ -10,6 +10,9 @@ const Goots = () => {
   return (
     <div className="page">
       <div className="container">
+        <div>
+          
+        </div>
         <div className="goots">
           <div className="goots__h1">ВЫГЛЯДЕТЬ БЛИСТАТЕЛЬНО ПОМОЖЕТ</div>
           <div className="goots__blok">
@@ -104,15 +107,60 @@ const Goots = () => {
                   />
                 </svg>
               </p>
-
               <p className="goots__price">12 900 ₽</p>
-
               <p className="goots__text">Подчеркнет линию талии</p>
             </div>
           </div>
         </div>
-
-        <div className="goots__twoblock"></div>
+        <section className="goots__twoblock">
+          <h2 className="goots__twoblock-title">СШИТО ВРУЧНУЮ</h2>
+          <ul className="goots__twoblock-ol">
+            <li className="goots__twoblock-ol_item">
+              Уровень пошива приравнивается к индивидуальному;
+            </li>
+            <li className="goots__twoblock-ol_item">
+              Создаем лекала для костюмов, которые подчеркивают достоинства и
+              скрывают недостатки фигуры;
+            </li>
+            <li className="goots__twoblock-ol_item">
+              Качественное исполнение: ровные отстрочки, красивая обработка – вы
+              можете носить вещи даже изнаночной стороной;
+            </li>
+            <li className="goots__twoblock-ol_item">
+              Используем современное оборудование и качественные материалы для
+              изготовления изделий;
+            </li>
+            <li className="goots__twoblock-ol_item">
+              Наши швеи занимаются пошивом и конструированием одежды более 20
+              лет. За это время их навыки доведены до идеала, и они продолжают
+              развиваться и совершенствоваться каждый день.
+            </li>
+          </ul>
+        </section>
+        <section className="goots__third">
+          <h2 className="goots__third-title">ЗАКАЖИТЕ ДОСТАВКУ</h2>
+          <p className="goots__third-text">
+            Закажите доставку с выездным стилистом бренда в удобное место по
+            Москве и МО. Вы сможете оценить посадку, качество изделий и не
+            захотите их снимать!
+          </p>
+          <ul className="goots__third-ol">
+            <li>Выберите модели для примерки.</li>
+            <li>Оставьте заявку, нажав на кноку ниже.</li>
+            <li>
+              Наш стилист подтвердит Вашу заявку и согласует удобное для вас
+              время и место.
+            </li>
+            <li>
+              В назначеное время стилист привезет заказаные модели и проведет
+              консультацию
+            </li>
+            <li>Вы можете оплатить понравившиеся модели после примерки.</li>
+            <li>
+              <button type="button">Заказать доставку</button>
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
   );

@@ -57,25 +57,135 @@
     background: #080808;
   }
   &__twoblock {
-    // PP
-    &-parralelogram {
-      width: 1140px;
-      height: 900px;
-      transform: skew(-45deg);
-      position: relative;
-      background: #252831;
-      display: block;
+    margin-top: 60px;
+    background: #252831 url("../Assets/goots/image1.png") left;
+    background-size: 669px 517px;
+    height: 517px;
+    background-repeat: no-repeat;
+    &-title {
+      padding-top: 55px;
+      padding-left: 275px;
       text-align: center;
-      line-height: 500px;
-
-      &:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
+      justify-content: center;
+      color: #fff;
+      font-weight: 400;
+      font-family: "FuturaBookC";
+    }
+    &-ol {
+      counter-reset: counter;
+      padding-top: 33px;
+      padding-left: 750px;
+      column-count: 2;
+      column-gap: 60px;
+      padding-right: 106px;
+      &_item {
+        display: table;
+        position: relative;
+        margin-bottom: 26px;
+        font-family: "FuturaBookC";
+        font-weight: 500;
+        color: #c0a78f;
+        font-size: 17px;
+        line-height: 1.46;
+        &::before {
+          display: table-cell;
+          border: 1px solid #c0a78f;
+          color: #c0a78f;
+          counter-increment: counter;
+          content: counter(counter);
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          height: 22px;
+          left: -34px;
+          position: absolute;
+          text-align: center;
+          top: 0;
+          width: 22px;
+        }
       }
     }
-    &-up {
-      display: flex;
+  }
+  &__third {
+    padding-left: 42px;
+    padding-top: 68px;
+    background: #252831 url("../Assets/goots/img2.png") right;
+    background-size: 671px 516px;
+    height: 516px;
+    background-repeat: no-repeat;
+    margin-bottom: 78px;
+    &-title {
+      color: #fff;
+      font-family: "FuturaBookC";
+      font-size: 21px;
+      letter-spacing: 0.05em;
+      line-height: 0.95;
+      margin-bottom: 17px;
+    }
+    &-text {
+      color: #c0a78f;
+      width: 570px;
+      height: 62px;
+      line-height: 22px;
+      font-size: 15;
+      font-family: Arial, Helvetica, sans-serif;
+      white-space: break-spaces;
+      margin-bottom: 41px;
+    }
+    &-ol {
+      padding: 0 59px 0;
+      display: block;
+      counter-reset: counter;
+      column-count: 2;
+      column-gap: 60px;
+      padding-right: 69px;
+      width: 670px;
+      height: 228px;
+      & li {
+        position: relative;
+        margin-bottom: 26px;
+        font-family: "FuturaBookC";
+        font-weight: 500;
+        color: #c0a78f;
+        font-size: 17px;
+        line-height: 22px;
+        &::before {
+          display: table-cell;
+          border: 3px solid #c0a78f;
+          color: #c0a78f;
+          counter-increment: counter;
+          content: counter(counter);
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          height: 20px;
+          left: -36px;
+          position: absolute;
+          text-align: center;
+          top: 0;
+          line-height: 22px;
+          width: 20px;
+        }
+        & button {
+          padding: 11px 13px;
+          color: #fff;
+          background-color: #c0a78f;
+          display: block;
+          cursor: pointer;
+          border: none;
+          border: 1px solid transparent;
+          font-family: "FuturaBookC";
+          font-size: 15px;
+          line-height: 18px;
+          text-transform: uppercase;
+          transition: all .4s ease;
+          &:hover {
+            background-color: #000000;
+            color: #c0a78f;
+            border-color:#c0a78f ;
+          }
+        }
+      }
     }
   }
 }
