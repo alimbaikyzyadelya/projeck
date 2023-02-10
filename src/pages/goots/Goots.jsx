@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import elean from "../../Assets/goots/EleanBoutique20983 2 (1).png";
 import lag from "../../Assets/goots/elean47408 3.png";
 import elen from "../../Assets/goots/elean1_58886 2 (1).png";
@@ -7,8 +7,13 @@ import slyde1 from "../../Assets/slyde/1slyde.jpeg";
 import slyde2 from "../../Assets/slyde/2slyde.jpeg";
 import slyde3 from "../../Assets/slyde/3slyde.jpeg";
 import slyde4 from "../../Assets/slyde/4slyde.jpeg";
+import plus from "../../Assets/slyde/plus.svg";
+import minus from "../../Assets/slyde/minus.svg";
 
 const Goots = () => {
+  const [active, setActive] = useState(false);
+  const [active2, setActive2] = useState(false);
+
   return (
     <div className="page">
       <div className="container">
@@ -103,26 +108,108 @@ const Goots = () => {
                       alt="icon"
                     />
                   </span>
-                  <span className="cardList__rigth-size_buttons-btns_text">ОПРЕДЕЛИТЕ СВОЙ РАЗМЕР</span>
+                  <span className="cardList__rigth-size_buttons-btns_text">
+                    ОПРЕДЕЛИТЕ СВОЙ РАЗМЕР
+                  </span>
                 </a>
                 <a href="" className="cardList__rigth-size_buttons-btns">
                   <span className="cardList__rigth-size_buttons-btns_icon">
-                    <img src="https://eleanboutique.ru/catalog/view/theme/default/assets/img/size-icon-2.svg" alt="" />
+                    <img
+                      src="https://eleanboutique.ru/catalog/view/theme/default/assets/img/size-icon-2.svg"
+                      alt=""
+                    />
                   </span>
-                  <span className="cardList__rigth-size_buttons-btns_text">Нет вашего размера?</span>
+                  <span className="cardList__rigth-size_buttons-btns_text">
+                    Нет вашего размера?
+                  </span>
                 </a>
               </div>
             </div>
-            <div>
-              <a href="">Добавить в корзину</a>
-              <div>
-                <a href=""></a>
-                <a href=""></a>
+            <div className="cardList__rigth-buttons">
+              <a href="" className="cardList__rigth-buttons_big">
+                Добавить в корзину
+              </a>
+              <div className="cardList__rigth-buttons_flex">
+                <a href="">Примерка</a>
+                <a href="">Купить в рассрочку</a>
               </div>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div className="cardList__rigth-text">
+              Одновременно нежная и дерзкая блуза создана стать королевой вашего
+              гардероба. Удобство рубашечного кроя сочетается с женственными и
+              элегантными деталями. Носите в офис с юбкой-карандаш, а на
+              дружеские посиделки с джинсами. Дополнить комплект можно шелковым
+              галстуком-бабочкой.
+            </div>
+            <div className="cardList__rigth-text pd">
+              <b>Состав:</b> 100% натуральный шелк
+            </div>
+            <div className="cardList__rigth-parametrs">
+              <div className="cardList__rigth-parametrs_item">
+                <div
+                  className="cardList__rigth-parametrs_item-flex"
+                  onClick={() => setActive(!active)}
+                >
+                  <div>Параметры</div>
+                  <div>
+                    <img src={active ? minus : plus} alt="icon" />
+                  </div>
+                </div>
+                <div
+                  style={{ display: `${active ? "block" : "none"}` }}
+                  className="cardList__rigth-parametrs_item-block"
+                >
+                  <div className="cardList__rigth-parametrs_item-block-flex">
+                    <span>Вид застежки</span>
+                    <p>пуговицы</p>
+                  </div>
+                  <div className="cardList__rigth-parametrs_item-block-flex">
+                    <span>Длина изделия</span>
+                    <p>20 см от талии</p>
+                  </div>
+                  <div className="cardList__rigth-parametrs_item-block-flex">
+                    <span>Крой</span>
+                    <p>Полуприлегающий</p>
+                  </div>
+                  <div className="cardList__rigth-parametrs_item-block-flex">
+                    <span>Уход за вещами</span>
+                    <p className="name">
+                      Ручная стирка при температуре 30 градусов с использованием
+                      специальных средств для стирки натурального шелка.
+                      Химчистка натурального шелка.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="cardList__rigth-parametrs_item">
+                <div
+                  className="cardList__rigth-parametrs_item-flex"
+                  onClick={() => setActive2(!active2)}
+                >
+                  <div>Дополнительно</div>
+                  <div>
+                    <img src={active2 ? minus : plus} alt="icon" />
+                  </div>
+                </div>
+                <div
+                  style={{ display: `${active2 ? "block" : "none"}` }}
+                  className="cardList__rigth-parametrs_item-block"
+                >
+                  <div className="cardList__rigth-parametrs_item-block-flex">
+                    <span>Производитель</span>
+                    <p>EleanBoutique</p>
+                  </div>
+                  <div className="cardList__rigth-parametrs_item-block-flex">
+                    <span>Размер модели на фото</span>
+                    <p>44</p>
+                  </div>
+                  <div className="cardList__rigth-parametrs_item-block-flex">
+                    <span>Рост модели на фото</span>
+                    <p className="name">170</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div></div>
           </div>
         </div>

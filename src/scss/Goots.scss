@@ -402,5 +402,153 @@
         }
       }
     }
+    &-buttons {
+      display: flex;
+      margin: 20px 0 35px;
+      flex-wrap: wrap;
+      &_big {
+        text-decoration: none;
+        outline: none;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+        background-color: #242424;
+        border-radius: 3px;
+        font-family: "FuturaBookC";
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #ffffff;
+        transition: all 0.4s;
+        border: 1px solid transparent;
+        &:hover {
+          color: #000;
+          background-color: #fff;
+          border-color: #000;
+        }
+      }
+      &_flex {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        & a {
+          width: 144px;
+          min-width: 144px;
+          margin-right: 9px;
+          color: #454545;
+          transition: all 0.4s;
+          border: 1px solid #e3e3e3;
+          background-color: transparent;
+          text-decoration: none;
+          text-transform: uppercase;
+          border-radius: 3px;
+          font-weight: 600;
+          font-size: 15px;
+          font-family: "FuturaBookC";
+          letter-spacing: 0.1em;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          height: 50px;
+          display: flex;
+          &:hover {
+            background-color: #000000;
+            color: #fff;
+          }
+          &:last-child {
+            flex-grow: 1;
+          }
+        }
+      }
+    }
+    &-text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 23px;
+      color: #242424;
+      font-family: "FuturaBookC";
+      &.pd {
+        padding-top: 10px;
+      }
+    }
+    &-parametrs {
+      border-top: 1px solid #e6e6e6;
+      margin-top: 37px;
+      &_item {
+        border-bottom: 1px solid #e6e6e6;
+        &-flex {
+          margin-right: 8px;
+          justify-content: space-between;
+          display: flex;
+          text-transform: uppercase;
+          cursor: pointer;
+          padding: 15px 0 15px 12px;
+          position: relative;
+          font-family: "FuturaBookC";
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 21px;
+          color: #222222;
+          & div {
+            & img {
+              width: 11px;
+              height: 11px;
+            }
+          }
+        }
+        &-block {
+          display: none;
+          padding: 0 12px 15px;
+          &-flex {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            font-size: 15px;
+            line-height: 18px;
+            margin-top: 20px;
+            color: #242424;
+            &:first-child {
+              margin-top: 0;
+            }
+            & + p::before {
+              background-color: red;
+            }
+            & span {
+              display: block;
+              flex-grow: 1;
+              font-weight: 500;
+            }
+            & p {
+              font-weight: normal;
+              width: 168px;
+              min-width: 168px;
+              margin-left: 13px;
+              position: relative;
+              &::before {
+                content: "";
+                position: absolute;
+                left: -12px;
+                width: 41px;
+                height: 1px;
+                bottom: -10px;
+                background-color: #dadada;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.name {
+  &::before {
+    display: none;
   }
 }
