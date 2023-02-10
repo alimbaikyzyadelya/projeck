@@ -17,6 +17,11 @@
   list-style-type: none;
 	font-family: 'FuturaBookC';
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 .container{
   width: 1380px;
   margin: 0 auto;

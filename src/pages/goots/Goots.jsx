@@ -3,15 +3,128 @@ import elean from "../../Assets/goots/EleanBoutique20983 2 (1).png";
 import lag from "../../Assets/goots/elean47408 3.png";
 import elen from "../../Assets/goots/elean1_58886 2 (1).png";
 import img from "../../Assets/goots/Elean25-sajt2 1 (1).png";
-import image from "../../Assets/goots/image1.png";
-import img1 from "../../Assets/goots/img2.png";
+import slyde1 from "../../Assets/slyde/1slyde.jpeg";
+import slyde2 from "../../Assets/slyde/2slyde.jpeg";
+import slyde3 from "../../Assets/slyde/3slyde.jpeg";
+import slyde4 from "../../Assets/slyde/4slyde.jpeg";
 
 const Goots = () => {
   return (
     <div className="page">
       <div className="container">
-        <div>
-          
+        <div className="cardList">
+          <div className="cardList__left">
+            <div className="cardList__left-navs">
+              <div className="cardList__left-navs_item">
+                <a href="#slide1">
+                  <img src={slyde1} alt="img" />
+                </a>
+              </div>
+              <div className="cardList__left-navs_item">
+                <a href="#slide2">
+                  <img src={slyde2} alt="img" />
+                </a>
+              </div>
+              <div className="cardList__left-navs_item">
+                <a href="#slide3">
+                  <img src={slyde3} alt="img" title="Блуза с баской" />
+                </a>
+              </div>
+              <div className="cardList__left-navs_item">
+                <a href="#slide4">
+                  <img src={slyde4} alt="img" title="Блуза с баской" />
+                </a>
+              </div>
+            </div>
+            <div className="cardList__left-bottom">
+              <div className="cardList__left-bottom_slyder">
+                <div className="cardList__left-bottom_slyder-item" id="slide1">
+                  <div>
+                    <img src={slyde1} alt="img" title="Блуза с баской" />
+                  </div>
+                </div>
+                <div className="cardList__left-bottom_slyder-item" id="slide2">
+                  <div>
+                    <img src={slyde2} alt="img" title="Блуза с баской" />
+                  </div>
+                </div>
+                <div className="cardList__left-bottom_slyder-item" id="slide3">
+                  <div>
+                    <img src={slyde3} alt="img" />
+                  </div>
+                </div>
+                <div className="cardList__left-bottom_slyder-item" id="slide4">
+                  <div>
+                    <img src={slyde4} alt="img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="cardList__rigth">
+            <div className="cardList__rigth-top">
+              <h2>Блуза с баской</h2>
+              <div></div>
+            </div>
+            <div className="cardList__rigth-price">18 900 ₽</div>
+            <div className="cardList__rigth-size">
+              <div className="cardList__rigth-size_title">Размер</div>
+              <div className="cardList__rigth-size_radio">
+                <label>
+                  <input type="radio" name="size-select" disabled />
+                  <span>40</span>
+                </label>
+                <label>
+                  <input type="radio" name="size-select" />
+                  <span>42</span>
+                </label>
+                <label>
+                  <input type="radio" name="size-select" />
+                  <span>44</span>
+                </label>
+                <label>
+                  <input type="radio" name="size-select" />
+                  <span>46</span>
+                </label>
+                <label>
+                  <input type="radio" name="size-select" />
+                  <span>50</span>
+                </label>
+                <label>
+                  <input type="radio" name="size-select" />
+                  <span>52</span>
+                </label>
+              </div>
+              <div className="cardList__rigth-size_buttons">
+                <a href="" className="cardList__rigth-size_buttons-btns">
+                  <span className="cardList__rigth-size_buttons-btns_icon">
+                    <img
+                      src="https://eleanboutique.ru/catalog/view/theme/default/assets/img/size-icon-1.svg"
+                      alt="icon"
+                    />
+                  </span>
+                  <span className="cardList__rigth-size_buttons-btns_text">ОПРЕДЕЛИТЕ СВОЙ РАЗМЕР</span>
+                </a>
+                <a href="" className="cardList__rigth-size_buttons-btns">
+                  <span className="cardList__rigth-size_buttons-btns_icon">
+                    <img src="https://eleanboutique.ru/catalog/view/theme/default/assets/img/size-icon-2.svg" alt="" />
+                  </span>
+                  <span className="cardList__rigth-size_buttons-btns_text">Нет вашего размера?</span>
+                </a>
+              </div>
+            </div>
+            <div>
+              <a href="">Добавить в корзину</a>
+              <div>
+                <a href=""></a>
+                <a href=""></a>
+              </div>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
         <div className="goots">
           <div className="goots__h1">ВЫГЛЯДЕТЬ БЛИСТАТЕЛЬНО ПОМОЖЕТ</div>
